@@ -1,0 +1,43 @@
+{
+  "name": "ui",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "test": "turbo run test --force"
+  },
+  "keywords": [
+    "ui",
+    "monorepo",
+    "learning"
+  ],
+  "author": {
+    "name": "Tony Lima",
+    "url": "https://github.com/tony-matheus"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "license": "MIT",
+  "packageManager": "pnpm@8.6.5",
+  "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.0.2",
+    "eslint": "^8.43.0",
+    "eslint-config-next": "13.4.7",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-turbo": "^1.10.6",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "postcss": "8.4.24",
+    "prettier": "^2.8.8",
+    "tailwindcss": "^3.3.2",
+    "ts-node": "^10.9.1",
+    "turbo": "^1.10.6",
+    "typescript": "^5.1.6",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^0.32.2"
+  }
+}
