@@ -2,10 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '@radix-ui/colors/gray.css';
+@import '@radix-ui/colors/blue.css';
+@import '@radix-ui/colors/green.css';
+@import '@radix-ui/colors/grass.css';
+@import '@radix-ui/colors/pink.css';
+@import '@radix-ui/colors/orange.css';
+@import '@radix-ui/colors/yellow.css';
+@import '@radix-ui/colors/red.css';
+@import '@radix-ui/colors/gray-dark.css';
+@import '@radix-ui/colors/blue-dark.css';
+@import '@radix-ui/colors/green-dark.css';
+@import '@radix-ui/colors/grass-dark.css';
+@import '@radix-ui/colors/pink-dark.css';
+@import '@radix-ui/colors/orange-dark.css';
+@import '@radix-ui/colors/yellow-dark.css';
+@import '@radix-ui/colors/red-dark.css';
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --red50: 4 100% 91%;
+  --red100: 3 100% 86%;
+  --red300: 1 100% 76%;
+  --red500: 0 100% 66%;
+  --red700: 0 79% 56%;
+  --red900: 0 52% 54%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +37,13 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+
+    --red50: 0 52% 54%;
+    --red100: 0 79% 56%;
+    --red300: 0 100% 66%;
+    --red500: 1 100% 76%;
+    --red700: 3 100% 86%;
+    --red900: 4 100% 91%;
   }
 }
 
