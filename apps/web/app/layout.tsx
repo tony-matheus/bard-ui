@@ -3,6 +3,7 @@ import '@/styles/globals.css'
 import { Metadata } from 'next'
 
 import { fontSans } from '@/lib/fonts'
+import { ThemeProvider } from '@/components/theme/ThemeProvider'
 
 import { SITE_CONFIG } from '../config/site'
 
@@ -18,7 +19,11 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang='en'>
-      <body className={fontSans.className}>{children}</body>
+      <body className={`dark-theme ${fontSans.className}`}>
+        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
