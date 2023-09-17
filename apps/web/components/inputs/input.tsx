@@ -1,6 +1,5 @@
-import { ComponentType, forwardRef, InputHTMLAttributes } from 'react'
-
 import { cn } from '@/lib/utils'
+import { ComponentType, forwardRef, InputHTMLAttributes } from 'react'
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   icon?: ComponentType<{ className?: string }>

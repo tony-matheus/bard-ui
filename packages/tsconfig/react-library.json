@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "React Library",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "isolateModules": true,
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "target": "es6"
+  }
+}

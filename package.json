@@ -19,19 +19,14 @@
     "url": "https://github.com/tony-matheus"
   },
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "packages/*"
   ],
   "license": "MIT",
   "packageManager": "pnpm@8.6.5",
   "dependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.0.2",
     "@radix-ui/colors": "^1.0.0",
-    "eslint": "^8.43.0",
-    "eslint-config-next": "13.4.7",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-config-turbo": "^1.10.6",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-tailwindcss": "^3.13.0",
     "postcss": "8.4.24",
     "prettier": "^2.8.8",
     "tailwindcss": "^3.3.2",
@@ -43,5 +38,8 @@
     "vite-tsconfig-paths": "^4.2.0",
     "vitest": "^0.32.2",
     "windy-radix-palette": "^0.6.1"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*"
   }
 }

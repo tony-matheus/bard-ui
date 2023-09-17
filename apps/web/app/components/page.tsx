@@ -2,9 +2,9 @@
 
 import { MoonIcon, SunIcon } from '@radix-ui/react-icons'
 import { useTheme } from 'next-themes'
-
-import { Button } from '@/components/buttons/button'
 import { Input } from '@/components/inputs/input'
+import { Button } from '@/components/buttons/button'
+
 
 export default function Components() {
   const { theme, setTheme } = useTheme()

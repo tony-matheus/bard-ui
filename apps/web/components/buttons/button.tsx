@@ -4,16 +4,13 @@ import {
   ButtonHTMLAttributes,
   ComponentType,
   forwardRef,
-  Fragment,
-  ReactNode,
 } from 'react'
 import { ReloadIcon } from '@radix-ui/react-icons'
 import { cva, type VariantProps } from 'class-variance-authority'
-
 import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
-  'text-md disable:cursor-not-allowed inline-flex items-center justify-center rounded-lg border-2 font-semibold ring-offset-primary transition-colors  focus-visible:outline-none focus-visible:ring-2  disabled:cursor-not-allowed disabled:opacity-50',
+  'text-md disable:cursor-not-allowed inline-flex items-center justify-center rounded-lg border-2  font-semibold ring-offset-primary transition-colors  focus-visible:outline-none focus-visible:ring-2  disabled:cursor-not-allowed disabled:opacity-50',
   {
     variants: {
       variant: {
