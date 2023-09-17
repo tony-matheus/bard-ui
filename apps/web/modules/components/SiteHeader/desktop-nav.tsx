@@ -11,11 +11,11 @@ import { Button } from '@/components/buttons/button'
 
 const LINKS = [
   {
-    name: 'Components',
-    url: '/components',
+    name: 'Docs',
+    url: '/docs/button',
   },
   {
-    name: 'About me',
+    name: 'About',
     url: '/about',
   },
 ]
@@ -25,8 +25,6 @@ export const DesktopNav = () => {
   const { theme, setTheme } = useTheme()
 
   const isDark = theme === 'dark'
-
-  console.log(theme)
 
   return (
     <div className='hidden w-full items-center justify-between md:flex'>
@@ -42,6 +40,7 @@ export const DesktopNav = () => {
             key={link.name}
             href={link.url}
             className={cn(
+              'text-sm',
               'transition-colors hover:text-foreground/80',
               pathname === link.url ? 'text-foreground' : 'text-foreground/60'
             )}

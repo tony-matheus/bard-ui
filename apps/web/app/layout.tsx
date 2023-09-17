@@ -1,11 +1,11 @@
 import '@/styles/globals.css'
 
 import { Metadata } from 'next'
+import { SiteHeader } from '@/modules/components/SiteHeader/site-header'
+import { ThemeProvider } from '@/modules/theme/ThemeProvider'
 
 import { SITE_CONFIG } from '@/config/site'
 import { fontSans } from '@/lib/fonts'
-import { ThemeProvider } from '@/components/theme/ThemeProvider'
-import { SiteHeader } from '@/components/page/site-header/site-header'
 
 export const metadata: Metadata = {
   title: SITE_CONFIG.name,

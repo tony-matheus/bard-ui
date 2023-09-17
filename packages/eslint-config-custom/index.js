@@ -9,6 +9,7 @@ module.exports = {
   ],
   plugins: ['tailwindcss'],
   rules: {
+    'no-unused-vars': 'error',
     '@next/next/no-html-link-for-pages': 'off',
     'tailwindcss/no-custom-classname': 'off',
     'tailwindcss/classnames-order': 'error',

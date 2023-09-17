@@ -6,8 +6,6 @@ module.exports = {
     tailwindcss: {
       callees: ['cn', 'cva'],
       config: 'tailwind.config.cjs',
-
-      // config: path.join(__dirname, './tailwind.config.cjs'),
     },
     next: {
       rootDir: ['apps/*/'],
