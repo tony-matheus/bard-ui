@@ -3,6 +3,7 @@ import '@/styles/globals.css'
 import { Metadata } from 'next'
 
 import { fontSans } from '@/lib/fonts'
+import { SiteHeader } from '@/components/page/site-header/site-header'
 import { ThemeProvider } from '@/components/theme/ThemeProvider'
 
 import { SITE_CONFIG } from '../config/site'
@@ -21,7 +22,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang='en'>
       <body className={fontSans.className}>
         <ThemeProvider attribute='class' defaultTheme='light'>
-          {children}
+          <div className='flex min-h-screen flex-col'>
+            <SiteHeader />
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>

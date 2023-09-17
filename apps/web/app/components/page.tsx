@@ -1,30 +1,30 @@
 'use client'
 
-import { useState } from 'react'
+import { MoonIcon, SunIcon } from '@radix-ui/react-icons'
 import { useTheme } from 'next-themes'
 
-import Button from '@/components/buttons/button'
-
-// import Dialog from '@/components/dialog'
+import { Button } from '@/components/buttons/button'
+import { Input } from '@/components/inputs/input'
 
 export default function Components() {
-  const [variant, setVariant] = useState('default')
   const { theme, setTheme } = useTheme()
-  const [isDialogOpen, setIsDialogOpen] = useState(false)
+
+  const isDark = theme === 'dark'
 
   return (
     <>
       <div className='height-100 bg-white-2 flex min-h-screen flex-col items-center justify-center'>
-        <div className='mb-3 flex items-center justify-center gap-2'>
-          <Button>Primary</Button>
-          <Button variant='outline'>Outline</Button>
-          <Button variant='ghost'>Ghost</Button>
-          <Button variant='destructive'>Destructive</Button>
-          <Button colorScheme='blue'>Blue</Button>
+        <div className='mb-3 flex flex-col items-center justify-center gap-3'>
+          <Input type='text' placeholder='Your text here' />
+
+          <Button
+            icon={isDark ? SunIcon : MoonIcon}
+            onClick={() => setTheme(isDark ? 'light' : 'dark')}
+            className='w-full'
+          >
+            Switch Theme
+          </Button>
         </div>
-        <Button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-          Button
-        </Button>
 
         {/* <Dialog
           title='This is a Dialog'
