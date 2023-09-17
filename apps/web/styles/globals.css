@@ -2,49 +2,112 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '@radix-ui/colors/gray.css';
-@import '@radix-ui/colors/blue.css';
-@import '@radix-ui/colors/green.css';
-@import '@radix-ui/colors/grass.css';
-@import '@radix-ui/colors/pink.css';
-@import '@radix-ui/colors/orange.css';
-@import '@radix-ui/colors/yellow.css';
-@import '@radix-ui/colors/red.css';
-@import '@radix-ui/colors/gray-dark.css';
-@import '@radix-ui/colors/blue-dark.css';
-@import '@radix-ui/colors/green-dark.css';
-@import '@radix-ui/colors/grass-dark.css';
-@import '@radix-ui/colors/pink-dark.css';
-@import '@radix-ui/colors/orange-dark.css';
-@import '@radix-ui/colors/yellow-dark.css';
-@import '@radix-ui/colors/red-dark.css';
-
 :root {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+
+  --white: 0 0% 100%;
+  --black: 0 0% 20%;
+
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
+  /* RED */
   --red50: 4 100% 91%;
   --red100: 3 100% 86%;
   --red300: 1 100% 76%;
   --red500: 0 100% 66%;
   --red700: 0 79% 56%;
   --red900: 0 52% 54%;
+
+  /* GREEN */
+  --green50: 134 62% 96%;
+  --green100: 132 61% 90%;
+  --green200: 136 58% 80%;
+  --green300: 139 54% 67%;
+  --green400: 141 48% 57%;
+  --green500: 143 63% 39%;
+  --green600: 144 70% 30%;
+  --green700: 146 71% 24%;
+  --green800: 146 66% 20%;
+  --green900: 148 64% 16%;
+
+  /* YELLOW */
+  --yellow50: 63 92% 95%;
+  --yellow100: 63 100% 88%;
+  --yellow200: 61 100% 76%;
+  --yellow300: 59 100% 63%;
+  --yellow400: 56 100% 53%;
+  --yellow500: 54 98% 47%;
+  --yellow600: 49 100% 40%;
+  --yellow700: 44 95% 33%;
+  --yellow800: 40 85% 29%;
+  --yellow900: 36 76% 26%;
+
+  /* BLUE */
+  --blue50: 214 100% 97%;
+  --blue100: 214 95% 93%;
+  --blue200: 213 97% 87%;
+  --blue300: 212 96% 78%;
+  --blue400: 213 94% 68%;
+  --blue500: 217 91% 60%;
+  --blue600: 221 83% 53%;
+  --blue700: 224 76% 48%;
+  --blue800: 226 71% 40%;
+  --blue900: 224 64% 33%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.dark {
+  --foreground: 0 0% 98%;
+  --background: 240 10% 3.9%;
 
-    --red50: 0 52% 54%;
-    --red100: 0 79% 56%;
-    --red300: 0 100% 66%;
-    --red500: 1 100% 76%;
-    --red700: 3 100% 86%;
-    --red900: 4 100% 91%;
-  }
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+
+  --red50: 0 52% 54%;
+  --red100: 0 79% 56%;
+  --red300: 0 100% 66%;
+  --red500: 1 100% 76%;
+  --red700: 3 100% 86%;
+  --red900: 4 100% 91%;
+
+  /* GREEN */
+  --green50: 148 64% 16%;
+  --green100: 146 66% 20%;
+  --green200: 146 71% 24%;
+  --green300: 144 70% 30%;
+  --green400: 143 63% 39%;
+  --green500: 141 48% 57%;
+  --green600: 139 54% 67%;
+  --green700: 136 58% 80%;
+  --green800: 132 61% 90%;
+  --green900: 134 62% 96%;
+
+  /* YELLOW */
+  --yellow50: 36 76% 26%;
+  --yellow100: 40 85% 29%;
+  --yellow200: 44 95% 33%;
+  --yellow300: 49 100% 40%;
+  --yellow400: 54 98% 47%;
+  --yellow500: 56 100% 53%;
+  --yellow600: 59 100% 63%;
+  --yellow700: 61 100% 76%;
+  --yellow800: 63 100% 88%;
+  --yellow900: 63 92% 95%;
+
+  /* BLUE */
+  --blue50: 224 64% 33%;
+  --blue100: 226 71% 40%;
+  --blue200: 224 76% 48%;
+  --blue300: 221 83% 53%;
+  --blue400: 217 91% 60%;
+  --blue500: 213 94% 68%;
+  --blue600: 212 96% 78%;
+  --blue700: 213 97% 87%;
+  --blue800: 214 95% 93%;
+  --blue900: 214 100% 97%;
 }
 
 body {

@@ -66,8 +66,6 @@ importers:
         specifier: ^0.6.1
         version: 0.6.1(@radix-ui/colors@1.0.0)(tailwindcss@3.3.2)
 
-  apps/test: {}
-
   apps/web:
     dependencies:
       '@radix-ui/react-dialog':

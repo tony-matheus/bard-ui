@@ -19,8 +19,8 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang='en'>
-      <body className={`dark-theme ${fontSans.className}`}>
-        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+      <body className={fontSans.className}>
+        <ThemeProvider attribute='class' defaultTheme='light'>
           {children}
         </ThemeProvider>
       </body>
