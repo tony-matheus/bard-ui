@@ -2,7 +2,7 @@ import { LinkBox, LinkBoxProps } from './link-box'
 
 const LINKS: Array<LinkBoxProps> = [
   {
-    url: '/Docs',
+    url: '/docs',
     title: 'Docs',
     subtitle: 'A List of components ready to be used!',
   },
