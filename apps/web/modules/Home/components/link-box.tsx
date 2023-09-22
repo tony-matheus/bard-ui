@@ -11,7 +11,6 @@ export function LinkBox({ url, title, subtitle }: LinkBoxProps) {
     <Link
       href={url}
       className='group flex-1 rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-green500 hover:bg-green500/30'
-      target='_blank'
       rel='noopener noreferrer'
     >
       <h2 className={`mb-3 text-2xl font-semibold`}>
