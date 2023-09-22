@@ -12,7 +12,7 @@ import { Button } from '@/components/buttons/button'
 const LINKS = [
   {
     name: 'Docs',
-    url: '/docs/button',
+    url: '/docs',
   },
   {
     name: 'About',

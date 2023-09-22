@@ -1,3 +1,5 @@
+const { withContentlayer } = require('next-contentlayer')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -5,12 +7,12 @@ const nextConfig = {
   redirects() {
     return [
       {
-        source: '/components',
-        destination: '/components/button',
+        source: '/docs',
+        destination: '/docs/components/button',
         permanent: true,
       },
     ]
   },
 }
 
-module.exports = nextConfig
+module.exports = withContentlayer(nextConfig)
