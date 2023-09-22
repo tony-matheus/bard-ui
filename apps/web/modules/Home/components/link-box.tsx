@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export interface LinkBoxProps {
   url: string
   title: string
@@ -6,7 +8,7 @@ export interface LinkBoxProps {
 
 export function LinkBox({ url, title, subtitle }: LinkBoxProps) {
   return (
-    <a
+    <Link
       href={url}
       className='group flex-1 rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-green500 hover:bg-green500/30'
       target='_blank'
@@ -21,6 +23,6 @@ export function LinkBox({ url, title, subtitle }: LinkBoxProps) {
       {!!subtitle && (
         <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>{subtitle}</p>
       )}
-    </a>
+    </Link>
   )
 }
