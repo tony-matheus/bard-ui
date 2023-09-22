@@ -6,8 +6,8 @@ interface DocsLayoutProps {
 }
 
 const ITEMS = [
-  { title: 'Button', url: '/docs/button' },
-  { title: 'Input', url: '/docs/input' },
+  { title: 'Button', url: '/docs/components/button' },
+  { title: 'Input', url: '/docs/components/input' },
 ]
 
 export default function DocsLayout({ children }: DocsLayoutProps) {

@@ -1,12 +1,9 @@
 'use client'
 
-import {
-  ButtonHTMLAttributes,
-  ComponentType,
-  forwardRef,
-} from 'react'
+import { ButtonHTMLAttributes, ComponentType, forwardRef } from 'react'
 import { ReloadIcon } from '@radix-ui/react-icons'
 import { cva, type VariantProps } from 'class-variance-authority'
+
 import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
@@ -96,4 +93,5 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 
 Button.displayName = 'Button'
 
-export { Button, buttonVariants }
+export default Button
+export { buttonVariants }
