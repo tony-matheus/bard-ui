@@ -29,20 +29,17 @@ export const ComponentPreview = ({ name, children }: ComponentPreviewProps) => {
     return <Component />
   }, [name])
 
-  const codeString = useMemo(() => {
-    if (
-      typeof Code?.props['data-rehype-pretty-code-fragment'] !== 'undefined'
-    ) {
-      console.log(Code.props)
-      const CodeSnippet = Code.props.children as React.ReactElement
+  // const codeString = useMemo(() => {
+  //   if (
+  //     typeof Code?.props['data-rehype-pretty-code-fragment'] !== 'undefined'
+  //   ) {
+  //     const CodeSnippet = Code.props.children as React.ReactElement
 
-      return (
-        CodeSnippet?.props?.value || CodeSnippet?.props?.__rawString__ || null
-      )
-    }
-  }, [Code])
-
-  console.log(codeString)
+  //     return (
+  //       CodeSnippet?.props?.value || CodeSnippet?.props?.__rawString__ || null
+  //     )
+  //   }
+  // }, [Code])
 
   return (
     <div>

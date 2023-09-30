@@ -66,6 +66,7 @@ export default makeSource({
         visit(tree, (node) => {
           if (node?.type === 'element' && node?.tagName === 'pre') {
             const [codeEl] = node.children
+
             if (codeEl.tagName !== 'code') {
               return
             }

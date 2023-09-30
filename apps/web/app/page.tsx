@@ -3,8 +3,6 @@ import Link from 'next/link'
 import LinkSection from '@/modules/Home/components/link-section'
 import CreatorAvatar from '@/public/creator.png'
 
-console.log(CreatorAvatar)
-
 export default function Home() {
   return (
     <main className='flex min-h-screen flex-col items-center justify-between p-24'>

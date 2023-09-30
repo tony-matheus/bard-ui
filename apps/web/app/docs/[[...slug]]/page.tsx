@@ -1,5 +1,7 @@
 'use client'
 
+import '@/styles/mdx.css'
+
 import { notFound } from 'next/navigation'
 import { Mdx } from '@/modules/Docs/components/mdx-components'
 import { ChevronRightIcon } from '@radix-ui/react-icons'
@@ -12,7 +14,7 @@ interface DocPageProps {
     slug: string[]
   }
 }
-const getDocFromParams = ({ params }: DocPageProps) => {
+function getDocFromParams({ params }: DocPageProps) {
   const slug = params.slug.join('/')
 
   const doc = allDocs.find((doc) => doc.slugAsParams === slug)

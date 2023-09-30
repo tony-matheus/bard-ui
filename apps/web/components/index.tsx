@@ -5,7 +5,9 @@ export const COMPONENTS: Record<string, any> = {
   'button-example': {
     name: 'button-example',
     type: 'components:examples',
-    component: lazy(() => import('@/components/examples/button-example')),
+    component: lazy(
+      () => import('@/components/examples/buttons/button-example')
+    ),
     file: '/components/examples/button-example.tsx',
   },
   input: {
