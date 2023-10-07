@@ -13,7 +13,7 @@ export const COMPONENTS: Record<string, any> = {
   input: {
     name: 'input',
     type: 'components:examples',
-    component: lazy(() => import('@/components/inputs/input')),
+    component: lazy(() => import('@/components/primitives/input')),
     file: '/components/inputs/input-example.tsx',
   },
 }

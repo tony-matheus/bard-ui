@@ -1,7 +1,7 @@
 import { HTMLAttributes, useEffect, useState } from 'react'
 import { CopyIcon } from '@radix-ui/react-icons'
 
-import Button from '@/components/buttons/button'
+import Button from '@/components/primitives/button'
 
 interface CopyButtonProps extends HTMLAttributes<HTMLButtonElement> {
   value: string
@@ -23,9 +23,13 @@ export function CopyButton({ value, ...props }: CopyButtonProps) {
   }
 
   return (
-    <Button variant='ghost' onClick={() => copyContent(value)} {...props}>
-      <CopyIcon />
-      <span className='ml-2'>{hasCopied ? 'Copied' : 'Copy'}</span>
+    <Button
+      variant='ghost'
+      onClick={() => copyContent(value)}
+      {...props}
+      icon={CopyIcon}
+    >
+      <span>{hasCopied ? 'Copied' : 'Copy'}</span>
     </Button>
   )
 }

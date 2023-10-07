@@ -7,7 +7,7 @@ import { useTheme } from 'next-themes'
 
 import { SITE_CONFIG } from '@/config/site'
 import { cn } from '@/lib/utils'
-import Button from '@/components/buttons/button'
+import Button from '@/components/primitives/button'
 
 const LINKS = [
   {

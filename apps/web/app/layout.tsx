@@ -20,7 +20,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang='en'>
       <body className={fontSans.className}>
-        <ThemeProvider attribute='class' defaultTheme='light'>
+        <ThemeProvider attribute='class' defaultTheme='dark'>
           <div className='flex min-h-screen flex-col'>
             <SiteHeader />
             {children}

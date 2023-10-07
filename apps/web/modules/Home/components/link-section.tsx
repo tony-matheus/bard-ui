@@ -15,7 +15,7 @@ const LINKS: Array<LinkBoxProps> = [
 
 export default function LinkSection() {
   return (
-    <div className='mb-32 flex justify-center gap-2 text-center lg:mb-0 lg:grid-cols-4 lg:text-left'>
+    <div className='mb-32 flex justify-center gap-2 lg:mb-0 lg:grid-cols-4 '>
       {LINKS.map((link) => (
         <LinkBox key={link.title} {...link} />
       ))}

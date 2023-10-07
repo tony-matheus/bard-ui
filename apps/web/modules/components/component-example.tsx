@@ -1,9 +1,10 @@
 'use client'
 
 import * as React from 'react'
+import { CodeIcon, Component1Icon } from '@radix-ui/react-icons'
 
 import { cn } from '@/lib/utils'
-import Button from '@/components/buttons/button'
+import Button from '@/components/primitives/button'
 
 import { CopyButton } from './copy-button'
 
@@ -42,10 +43,20 @@ export function ComponentExample({
     >
       <div className='flex items-center justify-between'>
         <div className='flex items-center gap-2'>
-          <Button value='preview' onClick={() => setShowCode(false)}>
+          <Button
+            value='preview'
+            variant={showCode ? 'outline' : 'primary'}
+            onClick={() => setShowCode(false)}
+            icon={Component1Icon}
+          >
             Preview
           </Button>
-          <Button value='code' onClick={() => setShowCode(true)}>
+          <Button
+            value='code'
+            variant={showCode ? 'primary' : 'outline'}
+            onClick={() => setShowCode(true)}
+            icon={CodeIcon}
+          >
             Code
           </Button>
         </div>

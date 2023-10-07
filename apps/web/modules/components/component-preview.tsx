@@ -1,7 +1,7 @@
 import { Suspense, useMemo, useState } from 'react'
 import { COMPONENTS } from '@/components'
 
-import Button from '@/components/buttons/button'
+import Button from '@/components/primitives/button'
 
 interface ComponentPreviewProps extends React.HTMLAttributes<HTMLDivElement> {
   name: string

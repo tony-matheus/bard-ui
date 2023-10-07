@@ -7,7 +7,7 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
-  'text-md disable:cursor-not-allowed inline-flex items-center justify-center rounded-lg border-2  font-semibold ring-offset-primary transition-colors  focus-visible:outline-none focus-visible:ring-2  disabled:cursor-not-allowed disabled:opacity-50',
+  'text-md disable:cursor-not-allowed inline-flex items-center justify-center rounded-lg border-2  font-semibold ring-offset-primary transition-colors focus-visible:outline-none  focus-visible:ring-2 disabled:cursor-not-allowed disabled:opacity-50',
   {
     variants: {
       variant: {
@@ -15,6 +15,8 @@ const buttonVariants = cva(
           'border-transparent bg-primary text-primary-foreground shadow-primary hover:bg-primary-hover active:border-2 active:border-primary active:shadow-primary-active disabled:bg-primary',
         secondary:
           'active:shadow-secondary-active border-transparent bg-secondary text-secondary-foreground shadow-secondary hover:bg-secondary-hover active:border-2 active:border-secondary disabled:bg-secondary',
+        outline:
+          'bg-outline border-primary bg-transparent text-primary shadow-primary hover:bg-primary hover:text-primary-foreground active:border-2 active:shadow-primary-active',
         ghost: 'hover:border-tra border-transparent hover:bg-primary/70',
         destructive:
           'active:shadow-destructive-active border-transparent bg-destructive text-destructive-foreground shadow-destructive hover:bg-destructive-hover active:border-2 active:border-destructive disabled:bg-destructive',
